@@ -1,0 +1,213 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 20px;
+  color: #E02401;
+}
+
+body {
+  background: url("../Images/back.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  width: Min(1200px, 90vw);
+  margin: 0 auto;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: var(--gap, 1em);
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  gap: var(--gap, 1em);
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #E02401;
+}
+
+h2 {
+  font-size: 1.7rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+html {
+  color: black;
+}
+
+a {
+  color: black;
+}
+
+body {
+  background: url("../Images/registerB.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+nav {
+  position: absolute;
+  width: Min(1250px, 90vw);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-top: 1.75em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .logo {
+  min-width: 80px;
+}
+
+nav .college-name {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  --gap: 0.55em;
+}
+
+nav .college-name img {
+  width: 70%;
+}
+
+nav .college-name span:nth-child(3) {
+  margin-top: -0.7em;
+}
+
+nav .nav-links {
+  --gap: 1.5em;
+}
+
+
+
+.form-container {
+  height: 110vh;
+  place-items: center;
+  padding-top: 200px;
+}
+
+.form-container form {
+  width: 100%;
+  --gap: 2em;
+}
+
+.form-container form .info,
+.form-container form .contact {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0 3em;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  --gap: 1em;
+}
+
+.form-container form .info h3,
+.form-container form .contact h3 {
+  margin-bottom: 0.45em;
+}
+
+.form-container form .info > div,
+.form-container form .contact > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-container form .info > div label,
+.form-container form .contact > div label {
+  font-weight: 600;
+}
+
+.form-container form .info > div input,
+.form-container form .info > div textarea,
+.form-container form .contact > div input,
+.form-container form .contact > div textarea {
+  width: Min(350px, 90%);
+  font-size: 1rem;
+  padding: 0.25em 0.45em;
+  outline: none;
+  border: 4px solid red;
+  -o-border-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+     border-image: -webkit-gradient(linear, left top, right top, from(#ffecd2), to(#fcb69f));
+     border-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+  border-image-slice: 1;
+}
+
+.form-container form .info > div input:focus,
+.form-container form .info > div textarea:focus,
+.form-container form .contact > div input:focus,
+.form-container form .contact > div textarea:focus {
+  -webkit-animation: border 5s linear;
+          animation: border 5s linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.form-container button {
+  padding: 0.45em 1.45em;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #d4d4d4, #fbfbfb);
+  -webkit-box-shadow: 18px 18px 50px #bcbcbc, -18px -18px 50px #ffffff;
+          box-shadow: 18px 18px 50px #bcbcbc, -18px -18px 50px #ffffff;
+  margin-bottom: 2em;
+}
+
+.form-container button:focus {
+  border-radius: 20px;
+  background: #ebebeb;
+  -webkit-box-shadow: inset 18px 18px 50px #bcbcbc, inset -18px -18px 50px #ffffff;
+          box-shadow: inset 18px 18px 50px #bcbcbc, inset -18px -18px 50px #ffffff;
+}

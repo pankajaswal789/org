@@ -1,0 +1,215 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 20px;
+  color: #000000;
+}
+
+body {
+  background: url("../Images/photo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  width: Min(1200px, 90vw);
+  margin: 0 auto;
+}
+
+.flace {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: var(--gap, 1em);
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  gap: var(--gap, 1em);
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+h2 {
+  font-size: 1.7rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+nav {
+  position: absolute;
+  width: Min(1250px, 90vw);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-top: 1.75em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .logo {
+  min-width: 80px;
+}
+
+nav .college-name {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  --gap: 0.55em;
+}
+
+nav .college-name img {
+  width: 70%;
+}
+
+nav .college-name span:nth-child(3) {
+  margin-top: -0.7em;
+}
+
+nav .nav-links {
+  --gap: 1.5em;
+}
+
+
+
+.hero {
+  place-items: center;
+  padding-top: Min(250px, 30vh);
+}
+
+
+
+.hero .signIn form {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  --gap: 1em;
+}
+
+.hero .signIn form .input-container {
+  position: relative;
+}
+
+.hero .signIn form .input-container svg {
+  width: 5%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 10px;
+  color: #514e48;
+  font-size: 1.4rem;
+}
+
+.hero .signIn form .input-container input {
+  display: block;
+  width: 100%;
+  padding: 0.55em 0 0.55em 2em;
+  font-size: 18px;
+  -webkit-transition: all linear 1s;
+  transition: all linear 1s;
+  outline: none;
+  border: 4px solid red;
+  -o-border-image: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+     border-image: -webkit-gradient(linear, left top, right top, from(#30cfd0), to(#330867));
+     border-image: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+  border-image-slice: 1;
+}
+
+.hero .signIn form .input-container input:focus {
+  -webkit-animation: border 5s linear;
+          animation: border 5s linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.hero .signIn form .input-container input::-webkit-input-placeholder {
+  font-size: 18px;
+}
+
+.hero .signIn form .input-container input:-ms-input-placeholder {
+  font-size: 18px;
+}
+
+.hero .signIn form .input-container input::-ms-input-placeholder {
+  font-size: 18px;
+}
+
+.hero .signIn form .input-container input::placeholder {
+  font-size: 18px;
+}
+
+.hero .signIn form button {
+  margin-top: 1em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.25em 2em;
+  font-size: 1.2rem;
+  font-weight: 700;
+  background: #174463;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(315deg, #12344c, #0f2c40);
+  -webkit-box-shadow: -5px -5px 12px #0d2738, 5px 5px 12px #153b56;
+          box-shadow: -5px -5px 12px #0d2738, 5px 5px 12px #153b56;
+  cursor: pointer;
+}
+
+.hero .signIn form button:focus {
+  border-radius: 5px;
+  background: #113147;
+  -webkit-box-shadow: inset -5px -5px 12px #0d2738, inset 5px 5px 12px #153b56;
+          box-shadow: inset -5px -5px 12px #0d2738, inset 5px 5px 12px #153b56;
+}
+
+.hero .signIn div:nth-child(5) {
+  margin-top: 2em;
+  --gap: 4em;
+}
+
+.hero .signIn div:nth-child(5) span {
+  font-size: 0.8rem;
+}
+
+.hero .signIn div:nth-child(5) a {
+  font-size: 0.7rem;
+  text-decoration: underline;
+  color: skyblue;
+}

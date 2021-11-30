@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admission Portal</title>
+    <link rel="stylesheet" href="styles/register.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="container">
+      <nav class="flex">
+        <div class="logo">
+          <a href="https://kecua.ac.in/"
+            ><img src="Images/logo.png" alt="College logo"
+          /></a>
+        </div>
+        <div class="college-name flex">
+          <img src="Images/logo-name-register.png" alt="Name of the college" />
+          <span>(Formerly Kumaon Enginerring College, Dwarhat)</span>
+          <span>An Autonomous Institute of Govt. of Uttarakhand</span>
+        </div>
+        <div class="nav-links">
+          <ul class="flex">
+            <li><a href="index.html">Sign in</a></li>
+            <li><a href="register.html">Register</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="form-container grid">
+        <form action="#!" class="flex">
+          <div class="info flex">
+            <h3>Personal Information</h3>
+            <div class="name">
+              <label for="name"> Name </label>
+              <input type="text" id="name" />
+            </div>
+            <div class="Fname">
+              <label for="Fname"> Father's Name </label>
+              <input type="text" id="Fname" />
+            </div>
+            <div class="Foccupation">
+              <label for="Foccupation"> Father's Occupation </label>
+              <input type="text" id="Foccupation" />
+            </div>
+            <div class="Mname">
+              <label for="Mname"> Mother's Name </label>
+              <input type="text" id="Mname" />
+            </div>
+            <div class="dob">
+              <label for="dob"> D.O.B </label>
+              <input type="date" id="dob" />
+            </div>
+            <div class="gender">
+              <label for="gender"> Gender </label>
+              <input list="genders" id="gender" />
+              <datalist id="genders">
+                <option value="Male"></option>
+                <option value="Female"></option>
+              </datalist>
+            </div>
+            <div class="course">
+              <label for="course"> Course </label>
+              <input list="courses" id="course" />
+              <datalist id="courses">
+                <option value="MBA"></option>
+                <option value="M.Tech"></option>
+                <option value="B.Tech"></option>
+                <option value="Polytechnic"></option>
+              </datalist>
+            </div>
+            <div class="trade">
+              <label for="trade"> Trade </label>
+              <input list="trades" id="trade" />
+              <datalist id="trades">
+                <option value="CSE"></option>
+                <option value="IT"></option>
+                <option value="ECE"></option>
+                <option value="ME"></option>
+                <option value="CIVIL"></option>
+                <option value="CE"></option>
+              </datalist>
+            </div>
+            <div class="air">
+              <label for="air"> All India Rank </label>
+              <input type="number" id="air" />
+            </div>
+          </div>
+          <div class="contact flex">
+            <h3>Contact Details</h3>
+            <div class="address">
+              <label for="address"> Address </label>
+              <textarea name="address" id="address" rows="3"></textarea>
+            </div>
+            <div class="city">
+              <label for="city"> City </label>
+              <input list="cities" id="city" />
+              <datalist id="cities">
+                <option value="Mumbai"></option>
+                <option value="Surat"></option>
+                <option value="Banglore"></option>
+                <option value="Hyderabad"></option>
+                <option value="Ahmedabad"></option>
+                <option value="Lucknow"></option>
+                <option value="Kanpur"></option>
+                <option value="Indore"></option>
+                <option value="Patna"></option>
+              </datalist>
+            </div>
+            <div class="state">
+              <label for="state"> State </label>
+              <input list="states" id="state" />
+              <datalist id="states">
+                <option value="Maharashtra"></option>
+                <option value="Gujarat"></option>
+                <option value="Karnatka"></option>
+                <option value="Telangana"></option>
+                <option value="Uttar Pradesh"></option>
+                <option value="Kanpur"></option>
+                <option value="Madhya Pradesh"></option>
+                <option value="Bihar"></option>
+              </datalist>
+            </div>
+            <div class="pinCode">
+              <label for="pinCode"> Pin Code </label>
+              <input type="number" id="pinCode" />
+            </div>
+            <div class="email">
+              <label for="email"> Email </label>
+              <input type="email" id="email" />
+            </div>
+            <div class="Mnumber">
+              <label for="Mnumber"> Mobile No. </label>
+              <input type="number" id="Mnumber" />
+            </div>
+          </div>
+        </form>
+        <button>Submit</button>
+      </div>
+    </section>
+  </body>
+  <script src="script.js"></script>
+</html>
